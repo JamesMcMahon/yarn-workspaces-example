@@ -1,3 +1,5 @@
-const { double } = require('a')
+const { double } = require("a");
+// b has lodash as a dependency so this is expected to work
+const _ = require("lodash");
 
-console.log(double(2));
+console.log(`${_.capitalize("hello")} ${double(2)}`);
